@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Praticando_Heranca_Composicao;
 
-namespace Praticando_Heranca_Composicao
+internal class ClienteVip : Pessoa
 {
-    internal class ClienteVip
+    public string NivelFidelidade { get; }
+    public string CodigoVip { get; set; }
+
+    public ClienteVip(string nome, int idade, string nivelfidelidade, string codigovip)
+        : base(nome, idade)
     {
+        NivelFidelidade = nivelfidelidade;
+        CodigoVip = codigovip;
     }
 }

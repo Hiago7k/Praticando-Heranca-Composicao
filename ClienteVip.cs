@@ -11,4 +11,14 @@ internal class ClienteVip : Pessoa
         NivelFidelidade = nivelfidelidade;
         CodigoVip = codigovip;
     }
+
+
+
+    public void ExibirBoasVindas()
+    {
+        Console.WriteLine($"Bem vindo {Nome}");
+        Console.WriteLine($"Idade {Idade}");
+        Console.WriteLine($"Nivel fidelidade {NivelFidelidade}");
+        Console.WriteLine($"Codigo VIP {CodigoVip}");
+    }
 }
